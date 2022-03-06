@@ -12,7 +12,7 @@ function UserSearch() {
     const handleSubmit =async (e)=>{
         e.preventDefault()
         if(text === ''){
-            setAlert('Please enter somthing','error');
+            setAlert('Please enter something','error');
         }else {
             dispatch('SET_LOADING')
             const users= await searchUsers(text);
@@ -31,7 +31,7 @@ function UserSearch() {
                                 value={text}
                                 onChange={handleChange}
                                 className="w-full pr-40 bg-gray-200 input input-lg text-black"
-                                placeholder="Search"
+                                placeholder="Enter a username to search"
                             />
                             <button type='submit' className="absolute top-0 right-0 rounded-l-none w-36 btn btn-lg">
                                 Go
