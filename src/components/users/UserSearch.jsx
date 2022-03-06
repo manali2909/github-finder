@@ -31,7 +31,7 @@ function UserSearch() {
                                 value={text}
                                 onChange={handleChange}
                                 className="w-full pr-40 bg-gray-200 input input-lg text-black"
-                                placeholder="Enter a username to search"
+                                placeholder="Search a username"
                             />
                             <button type='submit' className="absolute top-0 right-0 rounded-l-none w-36 btn btn-lg">
                                 Go
